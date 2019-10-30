@@ -1,0 +1,29 @@
+.ant-layout{
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    &-header{
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &-content{
+        background-color: #282C34;
+        padding: 15px;
+    }
+    &-footer{
+        background-color: #001529;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.menu-Icon{
+    width:20px;
+    height:20px;
+    position:relative;
+    bottom:2px;
+    margin-right:5px;
+}

@@ -2,6 +2,8 @@ import React from 'react';
 // import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom';
 import { Menu, Icon, Button } from 'antd';
+import icon01 from "../assets/img/icon01.png"
+import icon02 from "../assets/img/icon02.png"
 
 const { SubMenu } = Menu;
 
@@ -31,7 +33,8 @@ class Nav extends React.Component {
                         key="sub1"
                         title={
                             <span>
-                                <Icon type="mail" />
+                                {/* <Icon type="mail" /> */}
+                                <img className="menu-Icon" src={icon01} />
                                 <span>压缩混淆</span>
                             </span>
                         }
@@ -39,35 +42,18 @@ class Nav extends React.Component {
                         <Menu.Item key="5">
                             <Link to="/"><b>HTML</b></Link>
                         </Menu.Item>
-                        <Menu.Item key="6">
-                            <Link to="/compress/js"><b>Javascript</b></Link>
-                        </Menu.Item>
                         <Menu.Item key="7">
                             <Link to="/compress/css"><b>CSS</b></Link>
                         </Menu.Item>
+                        <Menu.Item key="6">
+                            <Link to="/compress/js"><b>JAVSACSCRIPT</b></Link>
+                        </Menu.Item>
                     </SubMenu>
                     <Menu.Item key="2">
-                        <Icon type="desktop" />
+                        <img className="menu-Icon" src={icon02} />
                         <span>二维码生成</span>
                         <Link to="/qrcode"><b>二维码生成</b></Link>
                     </Menu.Item>
-                    {/* <SubMenu
-                        key="sub2"
-                        title={
-                            <span>
-                                <Icon type="appstore" />
-                                <span>Navigation Two</span>
-
-                            </span>
-                        }
-                    >
-                        <Menu.Item key="9">Option 9</Menu.Item>
-                        <Menu.Item key="10">Option 10</Menu.Item>
-                        <SubMenu key="sub3" title="Submenu">
-                            <Menu.Item key="11">Option 11</Menu.Item>
-                            <Menu.Item key="12">Option 12</Menu.Item>
-                        </SubMenu>
-                    </SubMenu> */}
                 </Menu>
             </div>
         );

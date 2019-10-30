@@ -1,6 +1,6 @@
 # WEB UTILS
 > 这是一个使用 `electron@6.1.2` , `Create React App` 和 `antdesign`开发的一个桌面端小工具，主要功能包括 `HTML压缩`，`二维码生成`，`JS正则测试`等功能。
- 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -69,6 +69,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## TO DO LIST
+1. [X]  加入sass编译  直接`npm install node-sass sass-loader --save-dev` 重启服务就可用了
+2. [ ]  qrcode 实现
 
 ## 参考
 [React + Electron 搭建一个桌面应用](https://juejin.im/post/5a6a91276fb9a01cbd58ce32)

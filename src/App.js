@@ -7,7 +7,7 @@ import Compress_html from './pages/compress_html';
 import Compress_css from './pages/compress_css';
 import Compress_js from './pages/compress_js';
 import Qrcode from './pages/qrcode';
-import './App.css';
+import './App.scss';
 
 const { Header, Footer, Sider, Content } = Layout;
 
