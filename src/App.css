@@ -24,6 +24,19 @@
 }
 
 .ant-layout-footer{
-    background-color: #fff;
+    background-color: #001529;
     text-align: center;
+    color: #fff;
+}
+.ant-layout-header{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ant-layout{
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }

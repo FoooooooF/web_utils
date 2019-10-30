@@ -1,10 +1,12 @@
 import React from 'react';
-// import Button from 'antd/es/button';
-// import { Button } from 'antd';
-// import logo from './logo.svg';
+import { HashRouter, Route, hashHistory, Switch } from 'react-router-dom'
 import Nav from './components/nav.js';
 import Foot from './components/foot.js';
 import { Layout } from 'antd';
+import Compress_html from './pages/compress_html';
+import Compress_css from './pages/compress_css';
+import Compress_js from './pages/compress_js';
+import Qrcode from './pages/qrcode';
 import './App.css';
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -12,16 +14,23 @@ const { Header, Footer, Sider, Content } = Layout;
 
 function App() {
     return (
-        <Layout>
-            <Header>Header</Header>
+        <HashRouter >
             <Layout>
-                <Sider> <Nav></Nav></Sider>
-                <Content>Content</Content>
+                <Header>WEB UTILS</Header>
+                <Layout>
+                    <Sider> <Nav></Nav></Sider>
+                    <Content>
+                        <Route exact path='/' component={Compress_html} />
+                        <Route exact path='/compress/css' component={Compress_css} />
+                        <Route exact path='/compress/js' component={Compress_js} />
+                        <Route path="/qrcode" component={Qrcode}/>
+                    </Content>
+                </Layout>
+                <Footer>
+                    <Foot></Foot>
+                </Footer>
             </Layout>
-            <Footer>
-                <Foot></Foot>
-            </Footer>
-        </Layout>
+        </HashRouter>
     );
 }
 export default App;

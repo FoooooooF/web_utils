@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
+import { Link } from 'react-router-dom';
 import { Menu, Icon, Button } from 'antd';
 
 const { SubMenu } = Menu;
@@ -17,7 +18,7 @@ class Nav extends React.Component {
 
     render() {
         return (
-            <div style={{ width: 256 }}>
+            <div style={{ width: 200 }}>
                 <Menu
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
@@ -35,20 +36,28 @@ class Nav extends React.Component {
                             </span>
                         }
                     >
-                        <Menu.Item key="5">HTML</Menu.Item>
-                        <Menu.Item key="6">Javascript</Menu.Item>
-                        <Menu.Item key="7">CSS</Menu.Item>
+                        <Menu.Item key="5">
+                            <Link to="/"><b>HTML</b></Link>
+                        </Menu.Item>
+                        <Menu.Item key="6">
+                            <Link to="/compress/js"><b>Javascript</b></Link>
+                        </Menu.Item>
+                        <Menu.Item key="7">
+                            <Link to="/compress/css"><b>CSS</b></Link>
+                        </Menu.Item>
                     </SubMenu>
                     <Menu.Item key="2">
                         <Icon type="desktop" />
                         <span>二维码生成</span>
+                        <Link to="/qrcode"><b>二维码生成</b></Link>
                     </Menu.Item>
-                    <SubMenu
+                    {/* <SubMenu
                         key="sub2"
                         title={
                             <span>
                                 <Icon type="appstore" />
                                 <span>Navigation Two</span>
+
                             </span>
                         }
                     >
@@ -58,7 +67,7 @@ class Nav extends React.Component {
                             <Menu.Item key="11">Option 11</Menu.Item>
                             <Menu.Item key="12">Option 12</Menu.Item>
                         </SubMenu>
-                    </SubMenu>
+                    </SubMenu> */}
                 </Menu>
             </div>
         );
