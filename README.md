@@ -1,6 +1,8 @@
 # WEB UTILS
 > 这是一个使用 `electron@6.1.2` , `Create React App` 和 `antdesign`开发的一个桌面端小工具，主要功能包括 `HTML压缩`，`二维码生成`，`JS正则测试`等功能。
 
+![img](./assets/style.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
