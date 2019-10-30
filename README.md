@@ -74,7 +74,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## TO DO LIST
 1. [X]  加入sass编译  直接`npm install node-sass sass-loader --save-dev` 重启服务就可用了
-2. [ ]  qrcode 实现
+2. [X]  qrcode 实现
+3. [ ]  实现链接打开浏览器
+4. [ ]  实现压缩代码功能
+5. [ ]  react 代码打包生成
+6. [ ]  electron 代码打包，生成应用
 
 ## 参考
 [React + Electron 搭建一个桌面应用](https://juejin.im/post/5a6a91276fb9a01cbd58ce32)

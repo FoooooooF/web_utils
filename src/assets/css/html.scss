@@ -1,0 +1,21 @@
+.html{
+    h2{
+        color: #fff;
+    }
+    &-select{
+        padding: 10px;
+        min-height: 500px;
+        background-color:rgba($color: #fff, $alpha: 0.3);
+        ul{
+            list-style: none;
+            padding: 10px;
+            li{
+                height: 35px;
+                color: #1890FF;
+            }
+        }
+    }
+    &-content{
+        padding-left: 15px;
+    }
+}
