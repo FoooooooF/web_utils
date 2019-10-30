@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+// import Button from 'antd/es/button';
+// import { Button } from 'antd';
+// import logo from './logo.svg';
+import Nav from './components/nav.js';
+import Foot from './components/foot.js';
+import { Layout } from 'antd';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const { Header, Footer, Sider, Content } = Layout;
 
+
+function App() {
+    return (
+        <Layout>
+            <Header>Header</Header>
+            <Layout>
+                <Sider> <Nav></Nav></Sider>
+                <Content>Content</Content>
+            </Layout>
+            <Footer>
+                <Foot></Foot>
+            </Footer>
+        </Layout>
+    );
+}
 export default App;
