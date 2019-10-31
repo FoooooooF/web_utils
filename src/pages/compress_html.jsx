@@ -5,15 +5,14 @@ const {TextArea }=Input;
 
 class Compress_html extends Component {
     render() {
-        let a = "123"
         return (
             <Row className="html">
                 <Col className="html-select" span={4}>
                     <ul>
                     {
-                        ['压缩JS','压缩CSS','去掉双引号','去掉换行','去掉空白符'].map((v)=>{
+                        ['压缩JS','压缩CSS','去掉双引号','去掉换行','去掉空白符'].map((v,i)=>{
                             return (
-                                <li>
+                                <li key={i}>
                                     <Radio>{v}</Radio>
                                 </li>
                             )

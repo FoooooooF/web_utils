@@ -1,7 +1,7 @@
 import React from 'react';
-import { HashRouter, Route, hashHistory, Switch } from 'react-router-dom'
-import Nav from './components/nav.js';
-import Foot from './components/foot.js';
+import { HashRouter, Route} from 'react-router-dom'
+import Nav from './components/nav';
+import Foot from './components/foot';
 import { Layout } from 'antd';
 import Compress_html from './pages/compress_html';
 import Compress_css from './pages/compress_css';

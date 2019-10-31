@@ -1,7 +1,8 @@
 import React from 'react';
 // import ReactDOM from "react-dom";
 import { Link } from 'react-router-dom';
-import { Menu, Icon, Button } from 'antd';
+import { Menu} from 'antd';
+
 import icon01 from "../assets/img/icon01.png"
 import icon02 from "../assets/img/icon02.png"
 
@@ -26,7 +27,7 @@ class Nav extends React.Component {
                     defaultOpenKeys={['sub1']}
                     mode="inline"
                     theme="dark"
-                    inlineCollapsed={this.state.collapsed}
+                    // collapsed={this.state.collapsed}
                 >
 
                     <SubMenu
@@ -34,7 +35,7 @@ class Nav extends React.Component {
                         title={
                             <span>
                                 {/* <Icon type="mail" /> */}
-                                <img className="menu-Icon" src={icon01} />
+                                <img className="menu-Icon" src={icon01} alt="" />
                                 <span>压缩混淆</span>
                             </span>
                         }
@@ -50,7 +51,7 @@ class Nav extends React.Component {
                         </Menu.Item>
                     </SubMenu>
                     <Menu.Item key="2">
-                        <img className="menu-Icon" src={icon02} />
+                        <img className="menu-Icon" src={icon02} alt="" />
                         <span>二维码生成</span>
                         <Link to="/qrcode"><b>二维码生成</b></Link>
                     </Menu.Item>

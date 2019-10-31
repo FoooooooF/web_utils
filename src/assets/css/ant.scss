@@ -16,7 +16,11 @@
     &-footer{
         background-color: #001529;
         text-align: center;
-        color: #fff;
+        color: #1890FF;
+        span{
+            cursor: pointer;
+            user-select: none;
+        }
     }
 }
 

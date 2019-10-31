@@ -75,10 +75,26 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## TO DO LIST
 1. [X]  加入sass编译  直接`npm install node-sass sass-loader --save-dev` 重启服务就可用了
 2. [X]  qrcode 实现
-3. [ ]  实现链接打开浏览器
+3. [X]  实现链接打开浏览器,全局引入了electron方法，import 会报路径错误。实现了electron的调用
 4. [ ]  实现压缩代码功能
 5. [ ]  react 代码打包生成
 6. [ ]  electron 代码打包，生成应用
 
+## TIPS
+安装并运行了 electron-rebuild
+```
+npm install --save-dev electron-rebuild
+
+./node_modules/.bin/electron-rebuild
+```
+
 ## 参考
 [React + Electron 搭建一个桌面应用](https://juejin.im/post/5a6a91276fb9a01cbd58ce32)
+
+[React + Electron 搭建一个桌面应用](https://juejin.im/post/5a6a91276fb9a01cbd58ce32)
+
+[Electron 心得](https://github.com/QDMarkMan/CodeBlog/tree/master/Electron)
+
+[electron 使用 Node.js 原生模块](https://blog.csdn.net/weixin_33862041/article/details/91461373)
+
+[利用Electron简单撸一个Markdown编辑器](http://www.imooc.com/article/287712)
